@@ -1,6 +1,38 @@
-<mat-toolbar> Toolbar </mat-toolbar>
+<mat-toolbar color="primary">
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+    (click)="sidenav.toggle()"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>My App</span>
+  <span class="example-spacer"></span>
+  <button
+    mat-icon-button
+    class="example-icon favorite-icon"
+    aria-label="Example icon-button with heart icon"
+  >
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with share icon"
+  >
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>
 <mat-sidenav-container class="example-container">
-  <mat-sidenav #sidenav mode="side" opened> Sidenav content</mat-sidenav>
+  <mat-sidenav #sidenav mode="side" opened>
+    <mat-nav-list>
+      <h1>Sidenav</h1>
+      <a mat-list-item href="#">Link 1</a>
+      <a mat-list-item href="#">Link 2</a>
+      <a mat-list-item href="#">Link 3</a>
+    </mat-nav-list>
+  </mat-sidenav>
   <mat-sidenav-content>
     <ng-content></ng-content>
   </mat-sidenav-content>

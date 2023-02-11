@@ -1,0 +1,23 @@
+@use "sass:map";
+@use "@angular/material" as mat;
+// @use "../components";
+
+// Typography config based on the default, but using "Roboto Flex" as the
+// default font family for all levels.
+$my-app-typography: mat.define-typography-config(
+  $font-family: 'Roboto Flex',
+);
+
+$my-app-dark-primary: mat.define-palette(mat.$blue-grey-palette);
+$my-app-dark-accent: mat.define-palette(mat.$amber-palette, A200, A100, A400);
+$my-app-dark-warn: mat.define-palette(mat.$deep-orange-palette);
+$my-app-dark-theme: mat.define-dark-theme(
+  (
+    color: (
+      primary: $my-app-dark-primary,
+      accent: $my-app-dark-accent,
+      warn: $my-app-dark-warn,
+    ),
+    typography: $my-app-typography,
+  )
+);
