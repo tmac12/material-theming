@@ -2,6 +2,8 @@
 
 This is a simple project that switch Dark/Light theme using Angular Material components.
 
+![](https://github.com/tmac12/material-theming/blob/main/resources/theme.gif)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
