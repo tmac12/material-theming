@@ -1,6 +1,6 @@
 # MaterialTheming
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
+This is a simple project that switch Dark/Light theme using Angular Material components.
 
 ## Development server
 
